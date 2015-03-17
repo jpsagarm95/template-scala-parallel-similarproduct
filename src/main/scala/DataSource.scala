@@ -6,7 +6,13 @@ import io.prediction.controller.EmptyActualResult
 import io.prediction.controller.Params
 import io.prediction.data.storage.Event
 import io.prediction.data.storage.Storage
-
+//@sagar_start
+import io.prediction.data.storage.BiMap
+import org.apache.mahout.math.drm.CheckpointedDrm
+import org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark
+import org.apache.mahout.math.indexeddataset.IndexedDataset
+import org.apache.mahout.sparkbindings.drm.CheckpointedDrmSpark
+//@sagar_stop
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 import org.apache.spark.rdd.RDD
@@ -86,6 +92,12 @@ class DataSource(val dsp: DataSourceParams)
         }
         viewEvent
       }.cache()
+
+//@sagar_start
+    val userStringIntMap = BiMap.stringInt(usersRDD.keys)
+    val itemStringIntMap = BiMap.stringInt(itemsRDD.keys)
+    val ind : IndexedDataset = new IndexedDatasetSpark().create(new CheckpointedDrmSpark(), userStringIntMap, itemStringIntMap)
+//@sagar_stop
 
     new TrainingData(
       users = usersRDD,
