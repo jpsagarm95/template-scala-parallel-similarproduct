@@ -394,3 +394,35 @@
 2015-03-14 11:42:38,875 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
 2015-03-14 11:42:38,879 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 2 s, completed 14 Mar, 2015 11:42:38 AM[0m
 2015-03-14 11:42:38,922 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-03-17 22:41:27,232 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-03-17 22:41:27,315 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-03-17 22:41:27,316 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-03-17 22:41:27,316 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-03-17 22:41:27,317 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-03-17 22:42:04,049 INFO  io.prediction.tools.console.Console$ [main] - Creating Event Server at 0.0.0.0:7070
+2015-03-17 22:42:09,267 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-03-17 22:42:14,635 INFO  spray.can.server.HttpListener [EventServerSystem-akka.actor.default-dispatcher-4] - Bound to /0.0.0.0:7070
+2015-03-17 22:42:14,637 INFO  io.prediction.data.api.EventServerActor [EventServerSystem-akka.actor.default-dispatcher-4] - Bound received. EventServer is ready.
+2015-03-17 22:44:54,407 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-03-17 22:44:54,418 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-03-17 22:44:54,419 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-03-17 22:44:54,419 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-03-17 22:44:54,420 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-03-17 22:45:07,987 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mbad symbolic reference. A signature in package.class refers to type VectorWritable[0m
+2015-03-17 22:45:07,987 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0min package org.apache.mahout.math which is not available.[0m
+2015-03-17 22:45:07,988 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mIt may be completely missing from the current classpath, or the version on[0m
+2015-03-17 22:45:07,988 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mthe classpath might be incompatible with the version used when compiling package.class.[0m
+2015-03-17 22:45:07,989 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mbad symbolic reference. A signature in package.class refers to type MatrixWritable[0m
+2015-03-17 22:45:07,989 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0min package org.apache.mahout.math which is not available.[0m
+2015-03-17 22:45:07,989 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mIt may be completely missing from the current classpath, or the version on[0m
+2015-03-17 22:45:07,990 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mthe classpath might be incompatible with the version used when compiling package.class.[0m
+2015-03-17 22:45:08,051 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/DataSource.scala:99: overloaded method constructor IndexedDatasetSpark with alternatives:[0m
+2015-03-17 22:45:08,052 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  (id2: org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark)org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark <and>[0m
+2015-03-17 22:45:08,059 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  (matrix: org.apache.mahout.math.drm.CheckpointedDrm[Int],rowIDs: com.google.common.collect.BiMap[String,Int],columnIDs: com.google.common.collect.BiMap[String,Int])org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark[0m
+2015-03-17 22:45:08,059 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m cannot be applied to ()[0m
+2015-03-17 22:45:08,060 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    val ind : IndexedDataset = new IndexedDatasetSpark().create(new CheckpointedDrmSpark(), userStringIntMap, itemStringIntMap)[0m
+2015-03-17 22:45:08,060 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                               ^[0m
+2015-03-17 22:45:08,346 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mthree errors found[0m
+2015-03-17 22:45:08,368 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-03-17 22:45:08,371 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 9 s, completed 17 Mar, 2015 10:45:08 PM[0m
+2015-03-17 22:45:08,412 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.

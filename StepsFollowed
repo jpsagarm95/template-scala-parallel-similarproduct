@@ -1,0 +1,24 @@
+First we downloaded the code from the mahout github link.
+Compiled using "mvn -DskipTests clean install".
+Copied the jar files at math-scala folder and spark folder in mahout folder into the lib folder of our apps base directory.
+We then modified the DataSource part of the app and called a simple function from this library jar files.
+Then we ran "pio build" but it was not getting compiled and showed the following error.
+
+[ERROR] [Console$] [error] bad symbolic reference. A signature in package.class refers to type VectorWritable
+[ERROR] [Console$] [error] in package org.apache.mahout.math which is not available.
+[ERROR] [Console$] [error] It may be completely missing from the current classpath, or the version on
+[ERROR] [Console$] [error] the classpath might be incompatible with the version used when compiling package.class.
+[ERROR] [Console$] [error] bad symbolic reference. A signature in package.class refers to type MatrixWritable
+[ERROR] [Console$] [error] in package org.apache.mahout.math which is not available.
+[ERROR] [Console$] [error] It may be completely missing from the current classpath, or the version on
+[ERROR] [Console$] [error] the classpath might be incompatible with the version used when compiling package.class.
+[ERROR] [Console$] [error] /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/DataSource.scala:99: overloaded method constructor IndexedDatasetSpark with alternatives:
+[ERROR] [Console$] [error]   (id2: org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark)org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark <and>
+[ERROR] [Console$] [error]   (matrix: org.apache.mahout.math.drm.CheckpointedDrm[Int],rowIDs: com.google.common.collect.BiMap[String,Int],columnIDs: com.google.common.collect.BiMap[String,Int])org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark
+[ERROR] [Console$] [error]  cannot be applied to ()
+[ERROR] [Console$] [error]     val ind : IndexedDataset = new IndexedDatasetSpark().create(new CheckpointedDrmSpark(), userStringIntMap, itemStringIntMap)
+[ERROR] [Console$] [error]                                ^
+[ERROR] [Console$] [error] three errors found
+[ERROR] [Console$] [error] (compile:compile) Compilation failed
+[ERROR] [Console$] [error] Total time: 9 s, completed 17 Mar, 2015 10:45:08 PM
+[ERROR] [Console$] Return code of previous step is 1. Aborting.
