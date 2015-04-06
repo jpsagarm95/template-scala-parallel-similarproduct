@@ -7,6 +7,10 @@ import io.prediction.controller.Params
 import io.prediction.data.storage.Event
 import io.prediction.data.storage.Storage
 //@sagar_start
+import org.apache.mahout.math.DenseVector
+import org.apache.mahout.math.drm._
+import scala.collection.Seq
+import scala.collection.GenSeq
 import scala.collection.mutable.ArrayBuffer
 import io.prediction.data.storage.BiMap
 import com.google.common.collect.HashBiMap
@@ -16,7 +20,7 @@ import org.apache.mahout.sparkbindings
 import org.apache.mahout.sparkbindings.indexeddataset.IndexedDatasetSpark
 import org.apache.mahout.math.indexeddataset.IndexedDataset
 import org.apache.mahout.sparkbindings.drm.CheckpointedDrmSpark
-import org.apache.spark.mllib.linalg.Vector
+import org.apache.mahout.math.Vector
 import org.apache.spark.mllib.linalg.Vectors
 import collection.JavaConverters._
 //@sagar_stop
@@ -121,6 +125,7 @@ class DataSource(val dsp: DataSourceParams)
     var flag = 0;
     var Outside = 0;
     var Inside = 0;
+    var seq: ArrayBuffer[DrmTuple[Int]] = new ArrayBuffer[DrmTuple[Int]]()
     for((u, uId) <- users){
     	println(u)
     	val userItemAffinity = new ArrayBuffer[Double]()
@@ -132,15 +137,15 @@ class DataSource(val dsp: DataSourceParams)
 			userItemAffinity.append(0.0);
 		}	
 	}
-	
 	println(userItemAffinity)
-	Vectors.dense(userItemAffinity.toArray)
+	seq.append((uId, (new DenseVector(userItemAffinity.toArray))))
     }
+    print(seq)
     print("\n")
 
-    	
 
-   // val ind : IndexedDataset = new IndexedDatasetSpark(new CheckpointedDrmSpark[Int](null), usersG, itemsG)
+
+    val ind : IndexedDataset = new IndexedDatasetSpark(new CheckpointedDrmSpark[Int](sc.makeRDD[DrmTuple[Int]](seq)), usersG, itemsG)
 //@sagar_stop
 
     new TrainingData(
@@ -150,6 +155,7 @@ class DataSource(val dsp: DataSourceParams)
     )
   }
 }
+
 
 case class User()
 
