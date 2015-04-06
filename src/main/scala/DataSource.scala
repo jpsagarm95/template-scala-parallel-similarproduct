@@ -7,6 +7,7 @@ import io.prediction.controller.Params
 import io.prediction.data.storage.Event
 import io.prediction.data.storage.Storage
 //@sagar_start
+import collection.immutable.ListMap
 import org.apache.mahout.math.DenseVector
 import org.apache.mahout.math.drm._
 import scala.collection.Seq
@@ -105,15 +106,13 @@ class DataSource(val dsp: DataSourceParams)
       }.cache()
 
 //@sagar_start
-    val userStringIntMap = BiMap.stringInt(usersRDD.keys)
-    val itemStringIntMap = BiMap.stringInt(itemsRDD.keys)
-    
-    val users: Map[String, Int]  = usersRDD.map { case (id, user) =>
-      (id ,userStringIntMap(id))
+    var index = -1;
+    var users: Map[String, Int]  = usersRDD.map { case (id, user) =>
+      (id, {index = index + 1; index})
     }.collectAsMap.toMap
-    
-    val items: Map[String, Int]  = itemsRDD.map { case (id, item) =>
-      (id, itemStringIntMap(id))
+    index = -1;
+    var items: Map[String, Int]  = itemsRDD.map { case (id, item) =>
+      (id, {index = index + 1; index})
     }.collectAsMap.toMap
     val usersG = HashBiMap.create[String, Int]()
     val itemsG = HashBiMap.create[String, Int]()
@@ -121,16 +120,18 @@ class DataSource(val dsp: DataSourceParams)
     	usersG.put(k,v)
     for((k,v) <- items)
     	itemsG.put(k,v)
-    
+    users = ListMap(users.toList.sortBy{_._2}:_*)
+    items = ListMap(items.toList.sortBy{_._2}:_*)
     var flag = 0;
     var Outside = 0;
     var Inside = 0;
     var seq: ArrayBuffer[DrmTuple[Int]] = new ArrayBuffer[DrmTuple[Int]]()
     for((u, uId) <- users){
-    	println(u)
+    	println(u, uId)
     	val userItemAffinity = new ArrayBuffer[Double]()
 	val userItems:Map[String, Double] = viewEventsRDD.filter(vwEv => vwEv.user == u).map{vwEv => (vwEv.item, 1.0)}.collectAsMap.toMap
 	for((i, iId) <- items){
+		println(i, iId)
 		if(userItems.keySet.contains(i)){
 			userItemAffinity.append(1.0);
 		}else{
