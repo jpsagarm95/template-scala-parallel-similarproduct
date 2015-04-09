@@ -9,7 +9,7 @@ import org.apache.mahout.math.drm._
 import scala.collection.Seq
 import scala.collection.GenSeq
 import scala.collection.mutable.ArrayBuffer
-import io.prediction.data.storage.BiMap
+import com.google.common.collect.BiMap
 import com.google.common.collect.HashBiMap
 import scala.util.control._
 import org.apache.mahout.math.drm.CheckpointedDrm
@@ -51,22 +51,22 @@ class Preparator
     var Inside = 0;
     var seq: ArrayBuffer[DrmTuple[Int]] = new ArrayBuffer[DrmTuple[Int]]()
     for((u, uId) <- users){
-    	println(u, uId)
+  //  	println(u, uId)
     	val userItemAffinity = new ArrayBuffer[Double]()
 	val userItems:Map[String, Double] = trainingData.viewEvents.filter(vwEv => vwEv.user == u).map{vwEv => (vwEv.item, 1.0)}.collectAsMap.toMap
 	for((i, iId) <- items){
-		println(i, iId)
+//		println(i, iId)
 		if(userItems.keySet.contains(i)){
 			userItemAffinity.append(1.0);
 		}else{
 			userItemAffinity.append(0.0);
 		}	
 	}
-	println(userItemAffinity)
+//	println(userItemAffinity)
 	seq.append((uId, (new DenseVector(userItemAffinity.toArray))))
     }
-    print(seq)
-    print("\n")
+//    print(seq)
+ //   print("\n")
 
 
 
@@ -77,7 +77,8 @@ class Preparator
       items = trainingData.items,
       viewEvents = trainingData.viewEvents,
 //@sagar_start
-      userItemMatrix = ind
+      userItemMatrix = ind,
+      itemStringtoInt = itemsG
 //@sagar_stop
       )
   }
@@ -88,6 +89,7 @@ class PreparedData(
   val items: RDD[(String, Item)],
   val viewEvents: RDD[ViewEvent],
 //@sagar_start
-  val userItemMatrix: IndexedDataset
+  val userItemMatrix: IndexedDataset,
+  val itemStringtoInt : BiMap[String, Int]
 //@sagar_stop
 ) extends Serializable

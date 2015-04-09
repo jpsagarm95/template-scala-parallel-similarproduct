@@ -9,12 +9,15 @@
   },
   "algorithms": [
     {
-      "name": "als",
+      "name": "cos",
       "params": {
         "rank": 10,
         "numIterations" : 20,
         "lambda": 0.01,
-        "seed": 3
+        "seed": 3,
+        "randomSeed" : 10,
+        "maxInterestingItemsPerThing" : 50,
+        "maxNumInteractions" : 500
       }
     }
   ]

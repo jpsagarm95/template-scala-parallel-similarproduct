@@ -5172,3 +5172,710 @@ java.lang.NullPointerException
 2015-04-06 20:22:34,954 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
 2015-04-06 20:22:35,041 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
 2015-04-06 20:22:35,063 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-08 19:39:22,742 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:39:22,803 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:39:22,804 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:39:22,804 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:39:22,805 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:39:39,709 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:29: not found: type DrmLike[0m
+2015-04-08 19:39:39,710 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  val indicatorMatrix : List[DrmLike[Int]],[0m
+2015-04-08 19:39:39,710 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                             ^[0m
+2015-04-08 19:39:39,752 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:36: not found: value productFeatures[0m
+2015-04-08 19:39:39,752 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    s" productFeatures: [${productFeatures.size}]" +[0m
+2015-04-08 19:39:39,752 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                           ^[0m
+2015-04-08 19:39:40,521 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:68: type mismatch;[0m
+2015-04-08 19:39:40,521 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : org.apache.mahout.math.indexeddataset.IndexedDataset[0m
+2015-04-08 19:39:40,521 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: Array[org.apache.mahout.math.indexeddataset.IndexedDataset][0m
+2015-04-08 19:39:40,521 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    		data.userItemMatrix,[0m
+2015-04-08 19:39:40,522 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    		     ^[0m
+2015-04-08 19:39:42,113 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:80: type mismatch;[0m
+2015-04-08 19:39:42,113 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : com.google.common.collect.HashBiMap[String,Int][0m
+2015-04-08 19:39:42,114 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: io.prediction.data.storage.BiMap[String,Int][0m
+2015-04-08 19:39:42,114 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m      itemStringtoInt = itemsG,[0m
+2015-04-08 19:39:42,114 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                        ^[0m
+2015-04-08 19:39:42,129 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mfour errors found[0m
+2015-04-08 19:39:42,152 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 19:39:42,156 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 9 s, completed 8 Apr, 2015 7:39:42 PM[0m
+2015-04-08 19:39:42,188 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 19:43:14,958 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:43:14,969 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:43:14,970 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:43:14,970 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:43:14,971 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:43:21,429 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:14: not found: object drm[0m
+2015-04-08 19:43:21,429 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mimport drm._[0m
+2015-04-08 19:43:21,429 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m       ^[0m
+2015-04-08 19:43:21,647 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:31: not found: type DrmLike[0m
+2015-04-08 19:43:21,647 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  val indicatorMatrix : List[DrmLike[Int]],[0m
+2015-04-08 19:43:21,648 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                             ^[0m
+2015-04-08 19:43:22,278 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:69: type mismatch;[0m
+2015-04-08 19:43:22,279 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : org.apache.mahout.math.indexeddataset.IndexedDataset[0m
+2015-04-08 19:43:22,279 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: Int[0m
+2015-04-08 19:43:22,279 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    val userItemMatrixArray: Array[IndexedDataset] = new Array[IndexedDataset](data.userItemMatrix)[0m
+2015-04-08 19:43:22,280 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                                                                                    ^[0m
+2015-04-08 19:43:23,503 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:80: type mismatch;[0m
+2015-04-08 19:43:23,503 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : com.google.common.collect.HashBiMap[String,Int][0m
+2015-04-08 19:43:23,504 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: io.prediction.data.storage.BiMap[String,Int][0m
+2015-04-08 19:43:23,504 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m      itemStringtoInt = itemsG,[0m
+2015-04-08 19:43:23,504 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                        ^[0m
+2015-04-08 19:43:23,518 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mfour errors found[0m
+2015-04-08 19:43:23,542 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 19:43:23,546 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 7:43:23 PM[0m
+2015-04-08 19:43:23,572 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 19:45:24,743 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:45:24,753 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:45:24,754 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:45:24,755 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:45:24,755 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:45:30,963 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:70: identifier expected but integer literal found.[0m
+2015-04-08 19:45:30,964 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    userItemMatrixArray[0] = data.userItemMatrix[0m
+2015-04-08 19:45:30,964 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                        ^[0m
+2015-04-08 19:45:30,965 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:72: ']' expected but ';' found.[0m
+2015-04-08 19:45:30,965 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    val indicatorMatrix = SimilarityAnalysis.cooccurrencesIDSs( [0m
+2015-04-08 19:45:30,965 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m^[0m
+2015-04-08 19:45:31,013 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mtwo errors found[0m
+2015-04-08 19:45:31,046 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 19:45:31,051 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 2 s, completed 8 Apr, 2015 7:45:31 PM[0m
+2015-04-08 19:45:31,081 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 19:46:11,755 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:46:11,765 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:46:11,765 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:46:11,766 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:46:11,767 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:46:19,629 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:79: type mismatch;[0m
+2015-04-08 19:46:19,630 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : List[org.apache.mahout.math.indexeddataset.IndexedDataset][0m
+2015-04-08 19:46:19,630 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: List[org.apache.mahout.math.drm.DrmLike[Int]][0m
+2015-04-08 19:46:19,630 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m      indicatorMatrix = indicatorMatrix,[0m
+2015-04-08 19:46:19,630 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                        ^[0m
+2015-04-08 19:46:19,643 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:80: type mismatch;[0m
+2015-04-08 19:46:19,644 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : io.prediction.data.storage.BiMap[String,Int][0m
+2015-04-08 19:46:19,644 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: com.google.common.collect.BiMap[String,Int][0m
+2015-04-08 19:46:19,644 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m      itemStringtoInt = data.itemStringtoInt[0m
+2015-04-08 19:46:19,644 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                             ^[0m
+2015-04-08 19:46:20,704 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:80: type mismatch;[0m
+2015-04-08 19:46:20,704 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : com.google.common.collect.HashBiMap[String,Int][0m
+2015-04-08 19:46:20,705 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: io.prediction.data.storage.BiMap[String,Int][0m
+2015-04-08 19:46:20,705 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m      itemStringtoInt = itemsG,[0m
+2015-04-08 19:46:20,705 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                        ^[0m
+2015-04-08 19:46:20,721 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mthree errors found[0m
+2015-04-08 19:46:20,744 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 19:46:20,747 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 7:46:20 PM[0m
+2015-04-08 19:46:20,774 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 19:47:35,018 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:47:35,028 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:47:35,029 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:47:35,030 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:47:35,030 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:47:42,702 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:79: type mismatch;[0m
+2015-04-08 19:47:42,703 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : List[org.apache.mahout.math.indexeddataset.IndexedDataset][0m
+2015-04-08 19:47:42,703 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: List[org.apache.mahout.math.drm.DrmLike[Int]][0m
+2015-04-08 19:47:42,703 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m      indicatorMatrix = indicatorMatrix,[0m
+2015-04-08 19:47:42,703 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                        ^[0m
+2015-04-08 19:47:43,889 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 19:47:43,936 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 19:47:43,945 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 7:47:43 PM[0m
+2015-04-08 19:47:43,975 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 19:51:56,931 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:51:56,941 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:51:56,942 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:51:56,943 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:51:56,943 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:52:06,707 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:49: class COSAlgorithm needs to be abstract, since method predict in class P2LAlgorithm of type (model: org.template.similarproduct.COSModel, query: org.template.similarproduct.Query)org.template.similarproduct.PredictedResult is not defined[0m
+2015-04-08 19:52:06,708 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mclass COSAlgorithm(val ap: COSAlgorithmParams)[0m
+2015-04-08 19:52:06,708 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m      ^[0m
+2015-04-08 19:52:06,770 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 19:52:06,792 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 19:52:06,798 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 5 s, completed 8 Apr, 2015 7:52:06 PM[0m
+2015-04-08 19:52:06,834 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 19:53:59,637 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:53:59,647 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:53:59,647 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:53:59,648 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:53:59,648 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:54:07,668 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:201: not found: value */[0m
+2015-04-08 19:54:07,669 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m*/[0m
+2015-04-08 19:54:07,669 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m^[0m
+2015-04-08 19:54:08,989 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 19:54:09,012 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 19:54:09,016 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 7:54:09 PM[0m
+2015-04-08 19:54:09,045 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 19:54:21,717 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:54:21,727 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 19:54:21,727 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 19:54:21,728 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 19:54:21,728 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 19:54:56,430 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-08 19:54:56,431 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-08 19:54:56,441 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 19:54:56,441 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 19:54:56,453 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-08 19:54:58,109 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 19:54:58,302 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 19:54:59,155 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 19:54:59,164 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-08 19:55:00,157 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-08 19:55:03,055 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 19:55:11,915 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 19:55:12,109 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 19:55:15,047 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 19:55:16,273 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 19:55:16,459 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 19:55:16,498 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 19:55:16,498 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 19:55:16,500 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 19:55:16,756 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-08 19:55:16,756 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-08 19:55:17,881 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.21.208.83 instead (on interface wlan0)
+2015-04-08 19:55:17,882 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-08 19:55:23,561 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-08 19:55:23,881 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.lib.igloonet:51876]
+2015-04-08 19:55:36,782 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-08 19:55:36,782 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@46ae98ce
+2015-04-08 19:55:36,783 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@12d4c75c
+2015-04-08 19:55:36,783 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.ALSAlgorithm@2847a5a5)
+2015-04-08 19:55:36,783 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-08 19:55:38,975 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-08 19:55:43,342 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-08 19:55:47,816 WARN  org.apache.spark.mllib.recommendation.MatrixFactorizationModel [main] - User factor does not have a partitioner. Prediction on individual records could be slow.
+2015-04-08 19:55:47,842 WARN  org.apache.spark.mllib.recommendation.MatrixFactorizationModel [main] - Product factor does not have a partitioner. Prediction on individual records could be slow.
+2015-04-08 19:55:47,874 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.ALSModel does not support data sanity check. Skipping check.
+2015-04-08 19:55:47,875 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train completed
+2015-04-08 19:55:47,875 INFO  io.prediction.controller.Engine [main] - engineInstanceId=AUyZa79UT8LUH5Iw5Y0Z
+2015-04-08 19:55:47,899 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
+2015-04-08 19:55:48,039 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
+2015-04-08 19:55:48,070 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-08 20:02:08,933 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 20:02:08,944 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 20:02:08,945 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 20:02:08,946 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 20:02:08,946 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 20:02:15,632 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:77: unbound placeholder parameter[0m
+2015-04-08 20:02:15,633 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    val writeSchema: Schema = _[0m
+2015-04-08 20:02:15,633 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                              ^[0m
+2015-04-08 20:02:15,640 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 20:02:15,668 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 20:02:15,674 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 2 s, completed 8 Apr, 2015 8:02:15 PM[0m
+2015-04-08 20:02:15,700 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 20:03:44,979 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 20:03:44,990 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 20:03:44,990 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 20:03:44,991 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 20:03:44,992 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 20:03:53,086 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:83: could not find implicit value for parameter sc: org.apache.mahout.math.drm.DistributedContext[0m
+2015-04-08 20:03:53,087 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    indicatorMatrix(0).dfsWrite("/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/test.txt", writeSchema)[0m
+2015-04-08 20:03:53,087 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                               ^[0m
+2015-04-08 20:03:53,360 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 20:03:53,387 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 20:03:53,393 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 3 s, completed 8 Apr, 2015 8:03:53 PM[0m
+2015-04-08 20:03:53,422 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 20:06:54,649 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 20:06:54,660 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 20:06:54,661 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 20:06:54,662 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 20:06:54,662 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 20:07:03,016 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:83: could not find implicit value for parameter sc: org.apache.mahout.math.drm.DistributedContext[0m
+2015-04-08 20:07:03,016 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    indicatorMatrix(0).dfsWrite("/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/test.txt",[0m
+2015-04-08 20:07:03,016 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                               ^[0m
+2015-04-08 20:07:03,351 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 20:07:03,374 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 20:07:03,377 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 3 s, completed 8 Apr, 2015 8:07:03 PM[0m
+2015-04-08 20:07:03,416 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 20:07:49,908 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 20:07:49,921 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 20:07:49,921 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 20:07:49,922 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 20:07:49,922 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 20:07:58,772 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:84: type mismatch;[0m
+2015-04-08 20:07:58,772 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : org.apache.spark.SparkContext[0m
+2015-04-08 20:07:58,772 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: org.apache.mahout.math.drm.DistributedContext[0m
+2015-04-08 20:07:58,773 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    schema = writeSchema)(sc)[0m
+2015-04-08 20:07:58,773 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                          ^[0m
+2015-04-08 20:07:59,080 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 20:07:59,099 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 20:07:59,103 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 8:07:59 PM[0m
+2015-04-08 20:07:59,146 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 20:10:13,604 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 20:10:13,615 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 20:10:13,616 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 20:10:13,616 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 20:10:13,617 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 20:10:58,288 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-08 20:10:58,341 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-08 20:10:58,423 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 20:10:58,423 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 20:10:58,587 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-08 20:11:03,260 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 20:11:03,749 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 20:11:05,199 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 20:11:05,441 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-08 20:11:05,549 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-08 20:11:10,528 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 20:11:12,144 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 20:11:12,292 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 20:11:15,298 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 20:11:17,064 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 20:11:17,242 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 20:11:17,297 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 20:11:17,298 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 20:11:17,299 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 20:11:17,590 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-08 20:11:17,590 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-08 20:11:18,927 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.21.208.83 instead (on interface wlan0)
+2015-04-08 20:11:18,935 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-08 20:11:20,794 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-08 20:11:21,092 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.lib.igloonet:52194]
+2015-04-08 20:11:29,153 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-08 20:11:29,154 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@3e0153f0
+2015-04-08 20:11:29,154 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@57b78fe7
+2015-04-08 20:11:29,155 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.ALSAlgorithm@e91fc7b)
+2015-04-08 20:11:29,155 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-08 20:11:31,991 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-08 20:11:37,109 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-08 20:11:42,587 WARN  org.apache.spark.mllib.recommendation.MatrixFactorizationModel [main] - User factor does not have a partitioner. Prediction on individual records could be slow.
+2015-04-08 20:11:42,609 WARN  org.apache.spark.mllib.recommendation.MatrixFactorizationModel [main] - Product factor does not have a partitioner. Prediction on individual records could be slow.
+2015-04-08 20:11:42,651 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.ALSModel does not support data sanity check. Skipping check.
+2015-04-08 20:11:42,652 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train completed
+2015-04-08 20:11:42,663 INFO  io.prediction.controller.Engine [main] - engineInstanceId=AUyZemkpT8LUH5Iw5Y0a
+2015-04-08 20:11:42,693 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
+2015-04-08 20:11:42,918 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
+2015-04-08 20:11:42,944 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-08 21:50:56,078 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 21:50:56,149 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 21:50:56,150 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 21:50:56,150 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 21:50:56,151 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 21:51:35,256 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 21:51:35,264 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 21:51:35,264 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 21:51:35,265 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 21:51:35,265 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 21:52:29,114 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-08 21:52:29,115 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-08 21:52:29,126 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 21:52:29,126 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 21:52:29,139 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-08 21:52:32,410 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 21:52:32,546 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 21:52:33,557 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 21:52:33,567 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-08 21:52:34,238 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-08 21:52:39,020 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 21:52:40,549 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 21:52:40,720 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 21:52:43,629 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 21:53:02,544 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 21:53:04,057 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 21:53:04,217 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 21:53:05,595 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 21:53:06,601 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 21:53:06,767 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 21:53:06,804 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 21:53:06,804 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 21:53:06,806 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 21:53:06,811 ERROR io.prediction.workflow.WorkflowUtils$ [main] - Unable to extract parameters for org.template.similarproduct.COSAlgorithmParams from JSON string: {"randomSeed":"0xdeadbeef","maxInterestingItemsPerThing":50,"maxNumInteractions":500}. Aborting workflow.
+2015-04-08 21:53:25,461 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 21:53:26,975 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 21:53:27,117 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 21:53:28,549 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 21:53:29,363 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 21:53:29,431 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 21:53:29,442 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 21:53:29,442 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 21:53:29,444 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 21:53:29,449 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-08 21:53:29,450 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-08 21:53:30,515 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.21.208.83 instead (on interface wlan0)
+2015-04-08 21:53:30,516 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-08 21:53:31,154 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-08 21:53:31,380 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.lib.igloonet:36057]
+2015-04-08 21:53:41,079 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-08 21:53:41,080 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@5b150e3
+2015-04-08 21:53:41,080 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@2bf99714
+2015-04-08 21:53:41,081 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.COSAlgorithm@29be0389)
+2015-04-08 21:53:41,081 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-08 21:53:43,382 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-08 21:53:49,020 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-08 22:18:50,984 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:18:50,994 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:18:50,994 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:18:50,995 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:18:50,995 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:19:37,524 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:19:37,535 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:19:37,536 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:19:37,537 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:19:37,537 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:19:43,980 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:88: ')' expected but '.' found.[0m
+2015-04-08 22:19:43,981 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  val userStringtoInt: BiMap[String, Int].[0m
+2015-04-08 22:19:43,981 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                                         ^[0m
+2015-04-08 22:19:43,987 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 22:19:44,020 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 22:19:44,025 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 2 s, completed 8 Apr, 2015 10:19:44 PM[0m
+2015-04-08 22:19:44,060 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 22:20:06,035 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:20:06,046 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:20:06,046 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:20:06,047 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:20:06,047 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:20:13,564 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:90: not found: type DrmRDD[0m
+2015-04-08 22:20:13,565 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  val userItemMatrixRDD: DrmRDD[Int][0m
+2015-04-08 22:20:13,565 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                         ^[0m
+2015-04-08 22:20:14,396 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 22:20:14,467 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 22:20:14,472 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 10:20:14 PM[0m
+2015-04-08 22:20:14,508 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 22:20:32,468 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:20:32,478 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:20:32,478 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:20:32,479 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:20:32,480 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:20:39,899 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:90: not found: type DrmRdd[0m
+2015-04-08 22:20:39,900 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  val userItemMatrixRDD: DrmRdd[Int][0m
+2015-04-08 22:20:39,900 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                         ^[0m
+2015-04-08 22:20:40,801 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 22:20:40,865 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 22:20:40,868 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 3 s, completed 8 Apr, 2015 10:20:40 PM[0m
+2015-04-08 22:20:40,906 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 22:21:07,624 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:21:07,635 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:21:07,635 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:21:07,636 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:21:07,636 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:21:39,349 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-08 22:21:39,371 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-08 22:21:39,397 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:21:39,397 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:21:39,419 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-08 22:21:42,337 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:21:42,576 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:21:44,050 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:21:44,292 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-08 22:21:44,349 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-08 22:21:48,505 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:21:50,105 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:21:50,238 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 22:21:52,209 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:21:53,344 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 22:21:53,473 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 22:21:53,485 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 22:21:53,485 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 22:21:53,487 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 22:21:53,493 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-08 22:21:53,493 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-08 22:21:54,511 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.21.208.83 instead (on interface wlan0)
+2015-04-08 22:21:54,512 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-08 22:21:55,052 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-08 22:21:55,316 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.lib.igloonet:49616]
+2015-04-08 22:22:05,360 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-08 22:22:05,360 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@49759632
+2015-04-08 22:22:05,361 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@130592fd
+2015-04-08 22:22:05,361 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.COSAlgorithm@3d9e8495)
+2015-04-08 22:22:05,361 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-08 22:22:07,416 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-08 22:22:12,546 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-08 22:29:10,197 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:29:10,208 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:29:10,209 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:29:10,209 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:29:10,210 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:29:21,205 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:63: not found: type VectorWritable[0m
+2015-04-08 22:29:21,205 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	seq.append((uId, (new VectorWritable(userItemAffinity.toArray))))[0m
+2015-04-08 22:29:21,205 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	                      ^[0m
+2015-04-08 22:29:21,428 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 22:29:21,451 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 22:29:21,454 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 10:29:21 PM[0m
+2015-04-08 22:29:21,488 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 22:30:18,188 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:30:18,198 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:30:18,198 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:30:18,199 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:30:18,200 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:30:26,541 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:64: overloaded method constructor VectorWritable with alternatives:[0m
+2015-04-08 22:30:26,542 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  (x$1: org.apache.mahout.math.Vector,x$2: Boolean)org.apache.mahout.math.VectorWritable <and>[0m
+2015-04-08 22:30:26,542 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  (x$1: org.apache.mahout.math.Vector)org.apache.mahout.math.VectorWritable <and>[0m
+2015-04-08 22:30:26,543 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  (x$1: Boolean)org.apache.mahout.math.VectorWritable <and>[0m
+2015-04-08 22:30:26,543 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  ()org.apache.mahout.math.VectorWritable[0m
+2015-04-08 22:30:26,543 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m cannot be applied to (Array[Double])[0m
+2015-04-08 22:30:26,544 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	seq.append((uId, (new VectorWritable(userItemAffinity.toArray))))[0m
+2015-04-08 22:30:26,544 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	                  ^[0m
+2015-04-08 22:30:26,737 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 22:30:26,796 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 22:30:26,800 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 8 Apr, 2015 10:30:26 PM[0m
+2015-04-08 22:30:26,840 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 22:31:37,699 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:31:37,718 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:31:37,719 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:31:37,720 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:31:37,720 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:31:46,054 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:64: type mismatch;[0m
+2015-04-08 22:31:46,055 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : org.apache.mahout.math.VectorWritable[0m
+2015-04-08 22:31:46,055 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: org.apache.mahout.math.Vector[0m
+2015-04-08 22:31:46,056 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	seq.append((uId,new VectorWritable(new DenseVector(userItemAffinity.toArray))))[0m
+2015-04-08 22:31:46,056 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	                ^[0m
+2015-04-08 22:31:46,243 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-08 22:31:46,272 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-08 22:31:46,278 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 3 s, completed 8 Apr, 2015 10:31:46 PM[0m
+2015-04-08 22:31:46,305 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-08 22:40:16,209 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:40:16,219 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:40:16,220 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:40:16,221 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:40:16,221 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:40:52,861 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-08 22:40:52,916 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-08 22:40:52,998 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:40:52,998 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:40:53,082 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-08 22:40:58,325 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:40:58,858 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:41:00,120 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:41:00,570 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-08 22:41:00,755 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-08 22:41:13,870 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:41:15,802 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:41:16,254 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 22:41:19,149 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:41:20,417 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 22:41:20,604 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 22:41:20,643 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 22:41:20,643 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 22:41:20,645 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 22:41:20,652 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-08 22:41:20,652 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-08 22:41:22,702 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.21.208.83 instead (on interface wlan0)
+2015-04-08 22:41:22,720 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-08 22:41:24,568 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-08 22:41:25,307 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.lib.igloonet:42070]
+2015-04-08 22:41:36,242 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-08 22:41:36,243 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@1bb455e2
+2015-04-08 22:41:36,244 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@77627b27
+2015-04-08 22:41:36,244 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.COSAlgorithm@62dd5c14)
+2015-04-08 22:41:36,245 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-08 22:41:38,847 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-08 22:41:38,848 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-08 22:42:37,194 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:42:37,248 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:42:37,249 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:42:37,271 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:42:37,271 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:43:17,210 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-08 22:43:17,232 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-08 22:43:17,273 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:43:17,273 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:43:17,319 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-08 22:43:21,905 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:43:22,363 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:43:23,792 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:43:24,046 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-08 22:43:24,202 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-08 22:43:27,408 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:43:29,184 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:43:29,429 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 22:43:41,065 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:43:46,455 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 22:43:47,342 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 22:43:47,454 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 22:43:47,454 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 22:43:47,456 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 22:43:47,463 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-08 22:43:47,463 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-08 22:43:50,194 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.21.208.83 instead (on interface wlan0)
+2015-04-08 22:43:50,213 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-08 22:43:53,093 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-08 22:43:54,776 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.lib.igloonet:58552]
+2015-04-08 22:44:10,297 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-08 22:44:10,298 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@2c8073f0
+2015-04-08 22:44:10,298 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@28736ef2
+2015-04-08 22:44:10,298 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.COSAlgorithm@1302be2)
+2015-04-08 22:44:10,299 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-08 22:44:13,436 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-08 22:44:13,436 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-08 22:57:10,664 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:57:10,711 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-08 22:57:10,711 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-08 22:57:10,712 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-08 22:57:10,712 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-08 22:57:41,772 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-08 22:57:41,773 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-08 22:57:41,788 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:57:41,788 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:57:41,801 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-08 22:57:43,193 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:57:43,329 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-08 22:57:44,534 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-08 22:57:44,546 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-08 22:57:44,569 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-08 22:57:45,608 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-08 22:57:47,072 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:57:47,207 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-08 22:57:49,086 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-08 22:57:50,231 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-08 22:57:50,359 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-08 22:57:50,380 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-08 22:57:50,380 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-08 22:57:50,382 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-08 22:57:50,389 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-08 22:57:50,390 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-08 22:57:51,376 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.21.208.83 instead (on interface wlan0)
+2015-04-08 22:57:51,377 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-08 22:57:51,955 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-08 22:57:52,159 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.lib.igloonet:57774]
+2015-04-08 22:58:02,151 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-08 22:58:02,151 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@f76e774
+2015-04-08 22:58:02,152 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@76187142
+2015-04-08 22:58:02,152 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.COSAlgorithm@cf25b56)
+2015-04-08 22:58:02,152 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-08 22:58:04,106 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-08 22:58:04,107 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-09 00:45:58,551 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:45:58,708 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 00:45:58,709 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 00:45:58,709 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 00:45:58,710 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 00:48:07,470 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:48:07,482 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 00:48:07,483 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 00:48:07,484 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 00:48:07,485 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 00:48:22,658 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:57: not found: value itemStringtoInt[0m
+2015-04-09 00:48:22,659 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  @transient lazy val itemIntStringMap = itemStringtoInt.inverse[0m
+2015-04-09 00:48:22,660 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                                         ^[0m
+2015-04-09 00:48:25,036 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-09 00:48:25,056 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-09 00:48:25,059 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 9 s, completed 9 Apr, 2015 12:48:25 AM[0m
+2015-04-09 00:48:25,103 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-09 00:54:42,705 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:54:42,715 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 00:54:42,715 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 00:54:42,716 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 00:54:42,717 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 00:54:49,461 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/CooccurrencesSpark.scala:57: not found: value itemStringtoInt[0m
+2015-04-09 00:54:49,462 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m  @transient lazy val itemIntStringMap = itemStringtoInt.inverse[0m
+2015-04-09 00:54:49,462 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m                                         ^[0m
+2015-04-09 00:54:51,077 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-09 00:54:51,143 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-09 00:54:51,147 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 9 Apr, 2015 12:54:51 AM[0m
+2015-04-09 00:54:51,181 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-09 00:55:04,382 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:55:04,392 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 00:55:04,392 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 00:55:04,393 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 00:55:04,394 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 00:55:46,537 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-09 00:55:46,553 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-09 00:55:46,585 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-09 00:55:46,585 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-09 00:55:46,622 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-09 00:55:49,664 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-09 00:55:50,150 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-09 00:55:51,259 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-09 00:55:52,058 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-09 00:55:52,364 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-09 00:55:58,354 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:56:22,078 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-09 00:56:22,268 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-09 00:56:33,302 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-09 00:56:34,660 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-09 00:56:34,852 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-09 00:56:34,898 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-09 00:56:34,898 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-09 00:56:34,900 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-09 00:56:34,905 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-09 00:56:34,906 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-09 00:56:36,164 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.22.31.107 instead (on interface eth0)
+2015-04-09 00:56:36,165 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-09 00:56:37,013 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-09 00:56:37,285 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.go.igloonet:36996]
+2015-04-09 00:56:45,283 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-09 00:56:45,284 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@ac90383
+2015-04-09 00:56:45,284 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@576d8f8
+2015-04-09 00:56:45,285 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.COSAlgorithm@309efc1f)
+2015-04-09 00:56:45,285 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-09 00:56:48,586 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-09 00:56:53,512 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-09 00:57:17,403 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:57:17,413 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 00:57:17,414 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 00:57:17,414 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 00:57:17,415 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 00:57:33,703 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:57:33,715 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 00:57:33,715 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 00:57:33,716 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 00:57:33,717 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 00:58:02,234 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-09 00:58:02,235 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-09 00:58:02,248 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-09 00:58:02,248 INFO  io.prediction.tools.console.Console$ [main] - Found template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-09 00:58:02,260 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-09 00:58:03,900 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-09 00:58:04,043 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-09 00:58:04,838 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/target/scala-2.10/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar to file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar
+2015-04-09 00:58:04,848 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0
+2015-04-09 00:58:04,872 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-09 00:58:26,524 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 00:58:28,563 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-09 00:58:28,701 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /home/jpsagarm95/PredictionIO/vendors/spark-1.2.0/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 () --jars file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct_2.10-0.1-SNAPSHOT.jar,file:/home/jpsagarm95/.pio_store/engines/N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB/ed65add64ed7548bfe6965ee07b2deef1cd1e5d0/template-scala-parallel-similarproduct-assembly-0.1-SNAPSHOT-deps.jar --files /home/jpsagarm95/PredictionIO/conf/log4j.properties,/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf/hbase-site.xml --driver-class-path /home/jpsagarm95/PredictionIO/conf:/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6/conf /home/jpsagarm95/PredictionIO/lib/pio-assembly-0.9.0.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/home/jpsagarm95/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/home/jpsagarm95/PredictionIO/vendors/hbase-0.98.6,PIO_HOME=/home/jpsagarm95/PredictionIO,PIO_FS_ENGINESDIR=/home/jpsagarm95/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/home/jpsagarm95/PredictionIO/vendors/elasticsearch-1.4.2,PIO_FS_TMPDIR=/home/jpsagarm95/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/home/jpsagarm95/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/home/jpsagarm95/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id N05lZt4rCAOlyXGh7MfvzKnRkT4cKEmB --engine-version ed65add64ed7548bfe6965ee07b2deef1cd1e5d0 --engine-variant /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/engine.json --verbosity 0
+2015-04-09 00:58:30,730 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-09 00:58:31,970 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-09 00:58:32,088 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-09 00:58:32,107 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(1))
+2015-04-09 00:58:32,107 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-09 00:58:32,109 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-09 00:58:32,114 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-09 00:58:32,115 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-09 00:58:33,325 WARN  org.apache.spark.util.Utils [main] - Your hostname, jpsagarm95-Inspiron-5520 resolves to a loopback address: 127.0.1.1; using 10.22.31.107 instead (on interface eth0)
+2015-04-09 00:58:33,325 WARN  org.apache.spark.util.Utils [main] - Set SPARK_LOCAL_IP if you need to bind to another address
+2015-04-09 00:58:34,002 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Starting remoting
+2015-04-09 00:58:34,219 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-3] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@jpsagarm95-Inspiron-5520.go.igloonet:43761]
+2015-04-09 00:58:41,688 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train
+2015-04-09 00:58:41,689 INFO  io.prediction.workflow.EngineWorkflow$ [main] - DataSource: org.template.similarproduct.DataSource@130592fd
+2015-04-09 00:58:41,689 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Preparator: org.template.similarproduct.Preparator@3d9e8495
+2015-04-09 00:58:41,690 INFO  io.prediction.workflow.EngineWorkflow$ [main] - AlgorithmList: List(org.template.similarproduct.COSAlgorithm@15ba7029)
+2015-04-09 00:58:41,690 INFO  io.prediction.workflow.EngineWorkflow$ [main] - Data santiy check is on.
+2015-04-09 00:58:44,156 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.TrainingData does not support data sanity check. Skipping check.
+2015-04-09 00:58:48,445 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.PreparedData does not support data sanity check. Skipping check.
+2015-04-09 00:58:48,516 INFO  io.prediction.workflow.EngineWorkflow$ [main] - org.template.similarproduct.COSModel does not support data sanity check. Skipping check.
+2015-04-09 00:58:48,516 INFO  io.prediction.workflow.EngineWorkflow$ [main] - EngineWorkflow.train completed
+2015-04-09 00:58:48,517 INFO  io.prediction.controller.Engine [main] - engineInstanceId=AUyagWOYz0xjNBvnRbGH
+2015-04-09 00:58:48,536 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
+2015-04-09 00:58:48,725 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
+2015-04-09 00:58:48,790 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-09 01:28:44,680 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 01:28:44,745 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 01:28:44,746 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 01:28:44,746 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 01:28:44,747 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 01:28:53,368 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:53: class List is abstract; cannot be instantiated[0m
+2015-04-09 01:28:53,369 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    	var userItemAffinity = new List[Double]()[0m
+2015-04-09 01:28:53,369 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    	                       ^[0m
+2015-04-09 01:28:53,669 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-09 01:28:53,701 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-09 01:28:53,704 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 3 s, completed 9 Apr, 2015 1:28:53 AM[0m
+2015-04-09 01:28:53,738 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-09 01:30:12,844 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 01:30:12,855 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 01:30:12,855 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 01:30:12,856 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 01:30:12,856 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 01:30:21,013 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:53: trait GenSeq is abstract; cannot be instantiated[0m
+2015-04-09 01:30:21,014 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    	var userItemAffinity = new GenSeq[Double]()[0m
+2015-04-09 01:30:21,014 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m    	                       ^[0m
+2015-04-09 01:30:21,312 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-09 01:30:21,337 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-09 01:30:21,342 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 4 s, completed 9 Apr, 2015 1:30:21 AM[0m
+2015-04-09 01:30:21,379 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.
+2015-04-09 01:35:45,186 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/manifest.json
+2015-04-09 01:35:45,196 INFO  io.prediction.tools.console.Console$ [main] - Using command '/home/jpsagarm95/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-09 01:35:45,196 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-09 01:35:45,197 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.0.jar is absent.
+2015-04-09 01:35:45,197 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /home/jpsagarm95/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-09 01:35:54,872 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m/home/jpsagarm95/Desktop/ItemRecommender/template-scala-parallel-similarproduct/src/main/scala/Preparator.scala:62: type mismatch;[0m
+2015-04-09 01:35:54,873 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m found   : scala.collection.immutable.Vector[String][0m
+2015-04-09 01:35:54,873 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m required: org.apache.mahout.math.Vector[0m
+2015-04-09 01:35:54,874 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	seq.append((uId, (userItemAffinity.toList).map(_.toString).to[Vector]))[0m
+2015-04-09 01:35:54,874 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m	                                                             ^[0m
+2015-04-09 01:35:54,995 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mone error found[0m
+2015-04-09 01:35:55,080 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+2015-04-09 01:35:55,101 ERROR io.prediction.tools.console.Console$ [Thread-2] - [0m[[31merror[0m] [0mTotal time: 5 s, completed 9 Apr, 2015 1:35:55 AM[0m
+2015-04-09 01:35:55,186 ERROR io.prediction.tools.console.Console$ [main] - Return code of previous step is 1. Aborting.

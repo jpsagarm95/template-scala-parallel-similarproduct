@@ -25,8 +25,7 @@ object SimilarProductEngine extends IEngineFactory {
     new Engine(
       classOf[DataSource],
       classOf[Preparator],
-      Map("als" -> classOf[ALSAlgorithm],
-          "cos" -> classOf[COSAlgorithm]),
+      Map("als" -> classOf[ALSAlgorithm]),
       classOf[Serving])
   }
 }
