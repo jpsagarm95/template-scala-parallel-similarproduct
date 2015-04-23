@@ -17,7 +17,7 @@ We also needed a ArrayBuffer[DrmTuple[Int]] containing the viewEvents. As the ro
 We then built an indexedDatasetSpark using an RDD created from the matrix, and the user and item biMaps.  
 We pass the indexedDataset along with the items biMap to COSAlgorithm.scala
 
-###COSAlgorithm.scala
+###CooccurrencesSpark.scala
 We called the function SimilarityAnalysis.cooccurrencesIDSs, passing the userItemMatrix and other algorithmic parameters. This gives the serialization error.
 
 We were unable to proceed any further.
