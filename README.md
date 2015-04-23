@@ -1,92 +1,31 @@
 # Similar Product Template
 
-## Documentation
+##Overview
 
-Please refer to http://docs.prediction.io/templates/similarproduct/quickstart/
+This is a template aimed at integrating PredictionIO with the Mahout-Spark's ItemSimilarity Library.
+However, owing to a Javaserializer bug in Spark 1.2+, this module is still incomplete.(Please find a description of the error here: http://mail-archives.apache.org/mod_mbox/mahout-user/201409.mbox/%3CCAJBgT0=zC1XP-WozTkZF=EPVCPGj+1qXR3=MykCHr42yuT4m-A@mail.gmail.com%3E)
 
-## Versions
+##Changes Made to the Template
 
-### v0.1.2
+###DataSource.scala
+No changes were made here.
 
-- update for PredictionIO 0.9.0
+###Preparator.scala
+We extracted the unique users into a map (users), and the unique items into a map (items). This allows us to associate the string value (got from the data) to an integer value.
+We also built a HashBiMap (defined in the Google guava libraries) for both of these maps. These are required to build the indexedDataset.
+We also needed a ArrayBuffer[DrmTuple[Int]] containing the viewEvents. As the rows/columns of this matrix are indexed by the values in the users and items maps, we sorted these two. We then iterated over all users and items to create this matrix. We have used DenseVector as each row in the matrix. 
+We then built an indexedDatasetSpark using an RDD created from the matrix, and the user and item biMaps.  
+We pass the indexedDataset along with the items biMap to COSAlgorithm.scala
 
-### v0.1.1
+###COSAlgorithm.scala
+We called the function SimilarityAnalysis.cooccurrencesIDSs, passing the userItemMatrix and other algorithmic parameters. This gives the serialization error.
 
-- Persist RDD to memory (.cache()) in DataSource for better performance
-- Use local model for faster serving.
+We were unable to proceed any further.
 
-### v0.1.0
-
-- initial version
-
-
-## Development Notes
-
+ 
 ### import sample data
 
 ```
 $ python data/import_eventserver.py --access_key <your_access_key>
 ```
 
-### sample query
-
-normal:
-
-```
-curl -H "Content-Type: application/json" \
--d '{ "items": ["i1", "i3", "i10", "i2", "i5", "i31", "i9"], "num": 10}' \
-http://localhost:8000/queries.json \
--w %{time_connect}:%{time_starttransfer}:%{time_total}
-```
-
-```
-curl -H "Content-Type: application/json" \
--d '{
-  "items": ["i1", "i3", "i10", "i2", "i5", "i31", "i9"],
-  "num": 10,
-  "categories" : ["c4", "c3"]
-}' \
-http://localhost:8000/queries.json \
--w %{time_connect}:%{time_starttransfer}:%{time_total}
-```
-
-```
-curl -H "Content-Type: application/json" \
--d '{
-  "items": ["i1", "i3", "i10", "i2", "i5", "i31", "i9"],
-  "num": 10,
-  "whiteList": ["i21", "i26", "i40"]
-}' \
-http://localhost:8000/queries.json \
--w %{time_connect}:%{time_starttransfer}:%{time_total}
-```
-
-```
-curl -H "Content-Type: application/json" \
--d '{
-  "items": ["i1", "i3", "i10", "i2", "i5", "i31", "i9"],
-  "num": 10,
-  "blackList": ["i21", "i26", "i40"]
-}' \
-http://localhost:8000/queries.json \
--w %{time_connect}:%{time_starttransfer}:%{time_total}
-```
-
-unknown item:
-
-```
-curl -H "Content-Type: application/json" \
--d '{ "items": ["unk1", "i3", "i10", "i2", "i5", "i31", "i9"], "num": 10}' \
-http://localhost:8000/queries.json \
--w %{time_connect}:%{time_starttransfer}:%{time_total}
-```
-
-
-all unknown items:
-
-```
-curl -H "Content-Type: application/json" \
--d '{ "items": ["unk1", "unk2", "unk3", "unk4"], "num": 10}' \
-http://localhost:8000/queries.json \
--w %{time_connect}:%{time_starttransfer}:%{time_total}
-```
